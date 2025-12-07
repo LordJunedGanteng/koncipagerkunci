@@ -1,0 +1,15 @@
+{
+  "name": "saweria-roblox-notif",
+  "version": "1.0.0",
+  "description": "Webhook handler for Saweria → Roblox donation notification",
+  "main": "api/saweria.js",
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "buffer": "^6.0.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
