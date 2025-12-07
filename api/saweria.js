@@ -28,5 +28,9 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'Missing name or amount' });
   }
 
-  res.status(200).json({ success: true }); // 🔥 SEMENTARA: skip Roblox dulu
+  // 🔥 SEMENTARA: balas langsung dulu (biar gampang test)
+  return res.status(200).json({
+    success: true,
+    message: `Donation dari ${customer_name}: Rp${Number(amount).toLocaleString('id-ID')}`
+  });
 }
